@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj": {}
+    "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj": {
+    "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj",
+        "projectUniqueName": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj",
         "projectName": "RescueTalk.Dispatcher",
-        "projectPath": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj",
+        "projectPath": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj",
         "packagesPath": "C:\\Users\\Nikolay\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\obj\\",
+        "outputPath": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

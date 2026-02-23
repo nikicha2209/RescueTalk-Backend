@@ -1,77 +1,80 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\",
+  "WorkspaceRootPath": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\models\\incident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\models\\incident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\migrations\\20260215174204_addincidentcoordinates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\migrations\\20260215174204_addincidentcoordinates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\controllers\\incidentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\controllers\\incidentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\documents\\github\\rescuetalk-backend\\rescuetalk.dispatcher\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\documents\\github\\rescuetalk-backend\\rescuetalk.dispatcher\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\documents\\github\\rescuetalk-backend\\rescuetalk.dispatcher\\models\\incident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\models\\incident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\documents\\github\\rescuetalk-backend\\rescuetalk.dispatcher\\migrations\\20260215174204_addincidentcoordinates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\migrations\\20260215174204_addincidentcoordinates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\documents\\github\\rescuetalk-backend\\rescuetalk.dispatcher\\controllers\\incidentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\controllers\\incidentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\documents\\github\\rescuetalk-backend\\rescuetalk.dispatcher\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\controllers\\ambulancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\documents\\github\\rescuetalk-backend\\rescuetalk.dispatcher\\controllers\\ambulancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\controllers\\ambulancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\wwwroot\\dispatcher.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\documents\\github\\rescuetalk-backend\\rescuetalk.dispatcher\\wwwroot\\dispatcher.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\wwwroot\\dispatcher.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\models\\ambulance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\documents\\github\\rescuetalk-backend\\rescuetalk.dispatcher\\models\\ambulance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\models\\ambulance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\wwwroot\\test.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\documents\\github\\rescuetalk-backend\\rescuetalk.dispatcher\\wwwroot\\test.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\wwwroot\\test.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\data\\rescuetalkdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\documents\\github\\rescuetalk-backend\\rescuetalk.dispatcher\\data\\rescuetalkdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\data\\rescuetalkdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\dtos\\updatelocationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\documents\\github\\rescuetalk-backend\\rescuetalk.dispatcher\\dtos\\updatelocationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\dtos\\updatelocationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\hubs\\ambulancehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\documents\\github\\rescuetalk-backend\\rescuetalk.dispatcher\\hubs\\ambulancehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\hubs\\ambulancehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\migrations\\20260211204110_initial-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\documents\\github\\rescuetalk-backend\\rescuetalk.dispatcher\\migrations\\20260211204110_initial-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\migrations\\20260211204110_initial-migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\rescuetalk.dispatcher.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\documents\\github\\rescuetalk-backend\\rescuetalk.dispatcher\\rescuetalk.dispatcher.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\rescuetalk.dispatcher.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260211173721_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RescueTalk.Dispatcher\\Migrations\\20260211173721_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260211173721_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\migrations\\20260221183705_fixincidentrequiredfields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\documents\\github\\rescuetalk-backend\\rescuetalk.dispatcher\\migrations\\20260221183705_fixincidentrequiredfields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\migrations\\20260221183705_fixincidentrequiredfields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\migrations\\20260221182300_addincidentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\documents\\github\\rescuetalk-backend\\rescuetalk.dispatcher\\migrations\\20260221182300_addincidentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\migrations\\20260221182300_addincidentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\migrations\\20260218182924_updatedmodelincident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\documents\\github\\rescuetalk-backend\\rescuetalk.dispatcher\\migrations\\20260218182924_updatedmodelincident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\migrations\\20260218182924_updatedmodelincident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -82,15 +85,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Dockerfile",
+              "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Dockerfile",
+              "ToolTip": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Dockerfile",
+              "RelativeToolTip": "RescueTalk.Dispatcher\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-02-23T22:37:32.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Properties\\launchSettings.json",
               "RelativeToolTip": "RescueTalk.Dispatcher\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAkAAAAAAAAAAAAiwCgAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -98,11 +114,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "dispatcher.html",
-              "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\wwwroot\\dispatcher.html",
+              "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\wwwroot\\dispatcher.html",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\wwwroot\\dispatcher.html",
-              "ToolTip": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\wwwroot\\dispatcher.html",
+              "ToolTip": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\wwwroot\\dispatcher.html",
               "RelativeToolTip": "RescueTalk.Dispatcher\\wwwroot\\dispatcher.html",
               "ViewState": "AgIAAKkAAAAAAAAAAAAUwPcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
@@ -110,11 +126,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "IncidentsController.cs",
-              "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Controllers\\IncidentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Controllers\\IncidentsController.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Controllers\\IncidentsController.cs",
-              "ToolTip": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Controllers\\IncidentsController.cs",
+              "ToolTip": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Controllers\\IncidentsController.cs",
               "RelativeToolTip": "RescueTalk.Dispatcher\\Controllers\\IncidentsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -122,11 +138,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AmbulancesController.cs",
-              "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Controllers\\AmbulancesController.cs",
+              "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Controllers\\AmbulancesController.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Controllers\\AmbulancesController.cs",
-              "ToolTip": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Controllers\\AmbulancesController.cs",
+              "ToolTip": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Controllers\\AmbulancesController.cs",
               "RelativeToolTip": "RescueTalk.Dispatcher\\Controllers\\AmbulancesController.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAkwE4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -134,23 +150,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Program.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Program.cs",
-              "ToolTip": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Program.cs",
+              "ToolTip": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Program.cs",
               "RelativeToolTip": "RescueTalk.Dispatcher\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T17:35:43.115Z"
+              "WhenOpened": "2026-02-11T17:35:43.115Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "20260215174204_AddIncidentCoordinates.cs",
-              "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260215174204_AddIncidentCoordinates.cs",
+              "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Migrations\\20260215174204_AddIncidentCoordinates.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Migrations\\20260215174204_AddIncidentCoordinates.cs",
-              "ToolTip": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260215174204_AddIncidentCoordinates.cs",
+              "ToolTip": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Migrations\\20260215174204_AddIncidentCoordinates.cs",
               "RelativeToolTip": "RescueTalk.Dispatcher\\Migrations\\20260215174204_AddIncidentCoordinates.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -158,23 +175,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Incident.cs",
-              "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Models\\Incident.cs",
+              "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Models\\Incident.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Models\\Incident.cs",
-              "ToolTip": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Models\\Incident.cs",
+              "ToolTip": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Models\\Incident.cs",
               "RelativeToolTip": "RescueTalk.Dispatcher\\Models\\Incident.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T17:35:22.014Z"
+              "WhenOpened": "2026-02-11T17:35:22.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "20260221183705_FixIncidentRequiredFields.cs",
-              "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260221183705_FixIncidentRequiredFields.cs",
+              "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Migrations\\20260221183705_FixIncidentRequiredFields.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Migrations\\20260221183705_FixIncidentRequiredFields.cs",
-              "ToolTip": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260221183705_FixIncidentRequiredFields.cs",
+              "ToolTip": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Migrations\\20260221183705_FixIncidentRequiredFields.cs",
               "RelativeToolTip": "RescueTalk.Dispatcher\\Migrations\\20260221183705_FixIncidentRequiredFields.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -182,11 +204,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "20260221182300_AddIncidentStatus.cs",
-              "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260221182300_AddIncidentStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Migrations\\20260221182300_AddIncidentStatus.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Migrations\\20260221182300_AddIncidentStatus.cs",
-              "ToolTip": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260221182300_AddIncidentStatus.cs",
+              "ToolTip": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Migrations\\20260221182300_AddIncidentStatus.cs",
               "RelativeToolTip": "RescueTalk.Dispatcher\\Migrations\\20260221182300_AddIncidentStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -194,11 +216,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Ambulance.cs",
-              "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Models\\Ambulance.cs",
+              "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Models\\Ambulance.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Models\\Ambulance.cs",
-              "ToolTip": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Models\\Ambulance.cs",
+              "ToolTip": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Models\\Ambulance.cs",
               "RelativeToolTip": "RescueTalk.Dispatcher\\Models\\Ambulance.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -206,11 +228,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "20260218182924_UpdatedModelIncident.cs",
-              "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260218182924_UpdatedModelIncident.cs",
+              "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Migrations\\20260218182924_UpdatedModelIncident.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Migrations\\20260218182924_UpdatedModelIncident.cs",
-              "ToolTip": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260218182924_UpdatedModelIncident.cs",
+              "ToolTip": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Migrations\\20260218182924_UpdatedModelIncident.cs",
               "RelativeToolTip": "RescueTalk.Dispatcher\\Migrations\\20260218182924_UpdatedModelIncident.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAgwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -218,11 +240,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "test.html",
-              "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\wwwroot\\test.html",
+              "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\wwwroot\\test.html",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\wwwroot\\test.html",
-              "ToolTip": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\wwwroot\\test.html",
+              "ToolTip": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\wwwroot\\test.html",
               "RelativeToolTip": "RescueTalk.Dispatcher\\wwwroot\\test.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
@@ -230,11 +252,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "RescueTalkDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Data\\RescueTalkDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Data\\RescueTalkDbContext.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Data\\RescueTalkDbContext.cs",
-              "ToolTip": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Data\\RescueTalkDbContext.cs",
+              "ToolTip": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Data\\RescueTalkDbContext.cs",
               "RelativeToolTip": "RescueTalk.Dispatcher\\Data\\RescueTalkDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -242,11 +264,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "UpdateLocationDto.cs",
-              "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\DTOs\\UpdateLocationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\DTOs\\UpdateLocationDto.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\DTOs\\UpdateLocationDto.cs",
-              "ToolTip": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\DTOs\\UpdateLocationDto.cs",
+              "ToolTip": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\DTOs\\UpdateLocationDto.cs",
               "RelativeToolTip": "RescueTalk.Dispatcher\\DTOs\\UpdateLocationDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -254,11 +276,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AmbulanceHub.cs",
-              "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Hubs\\AmbulanceHub.cs",
+              "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Hubs\\AmbulanceHub.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Hubs\\AmbulanceHub.cs",
-              "ToolTip": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Hubs\\AmbulanceHub.cs",
+              "ToolTip": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Hubs\\AmbulanceHub.cs",
               "RelativeToolTip": "RescueTalk.Dispatcher\\Hubs\\AmbulanceHub.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -266,11 +288,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "20260211204110_Initial-Migration.cs",
-              "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260211204110_Initial-Migration.cs",
+              "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Migrations\\20260211204110_Initial-Migration.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Migrations\\20260211204110_Initial-Migration.cs",
-              "ToolTip": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260211204110_Initial-Migration.cs",
+              "ToolTip": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Migrations\\20260211204110_Initial-Migration.cs",
               "RelativeToolTip": "RescueTalk.Dispatcher\\Migrations\\20260211204110_Initial-Migration.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAgwEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -278,11 +300,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "RescueTalk.Dispatcher.csproj",
-              "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj",
+              "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj",
-              "ToolTip": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj",
+              "ToolTip": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj",
               "RelativeToolTip": "RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -290,19 +312,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "20260211173721_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260211173721_InitialMigration.cs",
-              "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Migrations\\20260211173721_InitialMigration.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260211173721_InitialMigration.cs",
               "ToolTip": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260211173721_InitialMigration.cs",
-              "RelativeToolTip": "RescueTalk.Dispatcher\\Migrations\\20260211173721_InitialMigration.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260211173721_InitialMigration.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAiwEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-11T17:37:22.219Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

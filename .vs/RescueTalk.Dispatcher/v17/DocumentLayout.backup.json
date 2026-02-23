@@ -31,20 +31,8 @@
       "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\wwwroot\\dispatcher.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260221183705_FixIncidentRequiredFields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RescueTalk.Dispatcher\\Migrations\\20260221183705_FixIncidentRequiredFields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\models\\ambulance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\models\\ambulance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260221182300_AddIncidentStatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RescueTalk.Dispatcher\\Migrations\\20260221182300_AddIncidentStatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260218182924_UpdatedModelIncident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RescueTalk.Dispatcher\\Migrations\\20260218182924_UpdatedModelIncident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\wwwroot\\test.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -73,6 +61,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260211173721_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RescueTalk.Dispatcher\\Migrations\\20260211173721_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\migrations\\20260221183705_fixincidentrequiredfields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\migrations\\20260221183705_fixincidentrequiredfields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\migrations\\20260221182300_addincidentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\migrations\\20260221182300_addincidentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\source\\repos\\rescuetalk.dispatcher\\rescuetalk.dispatcher\\migrations\\20260218182924_updatedmodelincident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\migrations\\20260218182924_updatedmodelincident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,8 +94,7 @@
               "RelativeToolTip": "RescueTalk.Dispatcher\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAkAAAAAAAAAAAAiwCgAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-21T20:31:16.027Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T20:31:16.027Z"
             },
             {
               "$type": "Document",
@@ -107,8 +106,7 @@
               "RelativeToolTip": "RescueTalk.Dispatcher\\wwwroot\\dispatcher.html",
               "ViewState": "AgIAAKkAAAAAAAAAAAAUwPcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-02-15T17:36:02.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T17:36:02.565Z"
             },
             {
               "$type": "Document",
@@ -120,8 +118,7 @@
               "RelativeToolTip": "RescueTalk.Dispatcher\\Controllers\\IncidentsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T20:50:00.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-11T20:50:00.056Z"
             },
             {
               "$type": "Document",
@@ -133,8 +130,7 @@
               "RelativeToolTip": "RescueTalk.Dispatcher\\Controllers\\AmbulancesController.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAkwE4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T20:42:46.133Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-11T20:42:46.133Z"
             },
             {
               "$type": "Document",
@@ -146,8 +142,7 @@
               "RelativeToolTip": "RescueTalk.Dispatcher\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T17:35:43.115Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-11T17:35:43.115Z"
             },
             {
               "$type": "Document",
@@ -159,8 +154,7 @@
               "RelativeToolTip": "RescueTalk.Dispatcher\\Migrations\\20260215174204_AddIncidentCoordinates.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T17:42:05.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-15T17:42:05.075Z"
             },
             {
               "$type": "Document",
@@ -172,12 +166,11 @@
               "RelativeToolTip": "RescueTalk.Dispatcher\\Models\\Incident.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T17:35:22.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-11T17:35:22.014Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "20260221183705_FixIncidentRequiredFields.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260221183705_FixIncidentRequiredFields.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Migrations\\20260221183705_FixIncidentRequiredFields.cs",
@@ -185,12 +178,11 @@
               "RelativeToolTip": "RescueTalk.Dispatcher\\Migrations\\20260221183705_FixIncidentRequiredFields.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T18:37:05.917Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T18:37:05.917Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "20260221182300_AddIncidentStatus.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260221182300_AddIncidentStatus.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Migrations\\20260221182300_AddIncidentStatus.cs",
@@ -198,12 +190,11 @@
               "RelativeToolTip": "RescueTalk.Dispatcher\\Migrations\\20260221182300_AddIncidentStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T18:23:00.99Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T18:23:00.99Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "Ambulance.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Models\\Ambulance.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Models\\Ambulance.cs",
@@ -211,12 +202,11 @@
               "RelativeToolTip": "RescueTalk.Dispatcher\\Models\\Ambulance.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T17:31:06.581Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-11T17:31:06.581Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "20260218182924_UpdatedModelIncident.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260218182924_UpdatedModelIncident.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Migrations\\20260218182924_UpdatedModelIncident.cs",
@@ -224,12 +214,11 @@
               "RelativeToolTip": "RescueTalk.Dispatcher\\Migrations\\20260218182924_UpdatedModelIncident.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAgwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T18:29:24.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-18T18:29:24.486Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "test.html",
               "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\wwwroot\\test.html",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\wwwroot\\test.html",
@@ -241,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 9,
               "Title": "RescueTalkDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Data\\RescueTalkDbContext.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Data\\RescueTalkDbContext.cs",
@@ -252,12 +241,8 @@
               "WhenOpened": "2026-02-11T17:33:57.781Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 10,
               "Title": "UpdateLocationDto.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\DTOs\\UpdateLocationDto.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\DTOs\\UpdateLocationDto.cs",
@@ -269,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 11,
               "Title": "AmbulanceHub.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Hubs\\AmbulanceHub.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Hubs\\AmbulanceHub.cs",
@@ -281,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 12,
               "Title": "20260211204110_Initial-Migration.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260211204110_Initial-Migration.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Migrations\\20260211204110_Initial-Migration.cs",
@@ -293,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 13,
               "Title": "RescueTalk.Dispatcher.csproj",
               "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj",
@@ -305,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 14,
               "Title": "20260211173721_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260211173721_InitialMigration.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Migrations\\20260211173721_InitialMigration.cs",
@@ -314,6 +299,10 @@
               "ViewState": "AgIAACYAAAAAAAAAAAAiwEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-11T17:37:22.219Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
