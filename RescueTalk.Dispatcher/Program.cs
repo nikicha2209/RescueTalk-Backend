@@ -11,7 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<RescueTalkDbContext>(options =>
     options.UseSqlite("Data Source=rescuedb.db"));
 
-builder.WebHost.UseUrls("http://0.0.0.0:10000");
+//builder.WebHost.UseUrls("http://0.0.0.0:10000");
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
