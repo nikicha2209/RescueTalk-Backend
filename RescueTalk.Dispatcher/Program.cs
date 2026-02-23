@@ -2,13 +2,16 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using RescueTalk.Dispatcher.Data;
 using RescueTalk.Dispatcher.Hubs;
+using System;
+using Microsoft.EntityFrameworkCore.SqlServer;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<RescueTalkDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlite("Data Source=rescuedb.db"));
 
+builder.WebHost.UseUrls("http://0.0.0.0:10000");
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -41,5 +44,11 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAuthorization();
 app.MapControllers();
+
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<RescueTalkDbContext>();
+    db.Database.EnsureCreated();
+}
 
 app.Run();
