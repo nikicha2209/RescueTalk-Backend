@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RescueTalk.Dispatcher")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2da74629734d9907ecbc889dc9d1900634eb0ac5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6a3213702560d7a84c7f25a741d8b5142e36357")]
 [assembly: System.Reflection.AssemblyProductAttribute("RescueTalk.Dispatcher")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RescueTalk.Dispatcher")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -7,10 +7,6 @@
       "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\documents\\github\\rescuetalk-backend\\rescuetalk.dispatcher\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|c:\\users\\nikolay\\documents\\github\\rescuetalk-backend\\rescuetalk.dispatcher\\models\\incident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{534B124C-4687-4F66-AE3A-938A45CD9658}|RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj|solutionrelative:rescuetalk.dispatcher\\models\\incident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -88,21 +84,12 @@
           "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Dockerfile",
-              "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Dockerfile",
-              "ToolTip": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Dockerfile",
-              "RelativeToolTip": "RescueTalk.Dispatcher\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-02-23T22:37:32.356Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Properties\\launchSettings.json",
@@ -114,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "dispatcher.html",
               "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\wwwroot\\dispatcher.html",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\wwwroot\\dispatcher.html",
@@ -126,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "IncidentsController.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Controllers\\IncidentsController.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Controllers\\IncidentsController.cs",
@@ -138,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "AmbulancesController.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Controllers\\AmbulancesController.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Controllers\\AmbulancesController.cs",
@@ -163,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "20260215174204_AddIncidentCoordinates.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Migrations\\20260215174204_AddIncidentCoordinates.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Migrations\\20260215174204_AddIncidentCoordinates.cs",
@@ -175,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Incident.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Models\\Incident.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Models\\Incident.cs",
@@ -183,16 +170,11 @@
               "RelativeToolTip": "RescueTalk.Dispatcher\\Models\\Incident.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T17:35:22.014Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2026-02-11T17:35:22.014Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "20260221183705_FixIncidentRequiredFields.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Migrations\\20260221183705_FixIncidentRequiredFields.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Migrations\\20260221183705_FixIncidentRequiredFields.cs",
@@ -204,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "20260221182300_AddIncidentStatus.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Migrations\\20260221182300_AddIncidentStatus.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Migrations\\20260221182300_AddIncidentStatus.cs",
@@ -216,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "Ambulance.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Models\\Ambulance.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Models\\Ambulance.cs",
@@ -228,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "20260218182924_UpdatedModelIncident.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Migrations\\20260218182924_UpdatedModelIncident.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Migrations\\20260218182924_UpdatedModelIncident.cs",
@@ -240,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "test.html",
               "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\wwwroot\\test.html",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\wwwroot\\test.html",
@@ -252,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "RescueTalkDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Data\\RescueTalkDbContext.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Data\\RescueTalkDbContext.cs",
@@ -264,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "UpdateLocationDto.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\DTOs\\UpdateLocationDto.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\DTOs\\UpdateLocationDto.cs",
@@ -276,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "AmbulanceHub.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Hubs\\AmbulanceHub.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Hubs\\AmbulanceHub.cs",
@@ -288,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "20260211204110_Initial-Migration.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\Migrations\\20260211204110_Initial-Migration.cs",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\Migrations\\20260211204110_Initial-Migration.cs",
@@ -300,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "RescueTalk.Dispatcher.csproj",
               "DocumentMoniker": "C:\\Users\\Nikolay\\Documents\\GitHub\\RescueTalk-Backend\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj",
               "RelativeDocumentMoniker": "RescueTalk.Dispatcher\\RescueTalk.Dispatcher.csproj",
@@ -312,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "20260211173721_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\Nikolay\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260211173721_InitialMigration.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\RescueTalk.Dispatcher\\RescueTalk.Dispatcher\\Migrations\\20260211173721_InitialMigration.cs",
