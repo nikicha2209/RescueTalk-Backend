@@ -15,7 +15,9 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/Ambulances/assign": {
       "post": {
         "tags": [
           "Ambulances"
@@ -24,17 +26,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Ambulance"
+                "$ref": "#/components/schemas/AssignDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Ambulance"
+                "$ref": "#/components/schemas/AssignDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Ambulance"
+                "$ref": "#/components/schemas/AssignDto"
               }
             }
           }
@@ -46,49 +48,36 @@
         }
       }
     },
-    "/api/Ambulances/available": {
+    "/api/incidents": {
       "get": {
         "tags": [
-          "Ambulances"
+          "Incidents"
         ],
         "responses": {
           "200": {
             "description": "OK"
           }
         }
-      }
-    },
-    "/api/Ambulances/{id}/location": {
-      "put": {
+      },
+      "post": {
         "tags": [
-          "Ambulances"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
+          "Incidents"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateLocationDto"
+                "$ref": "#/components/schemas/CreateIncidentDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateLocationDto"
+                "$ref": "#/components/schemas/CreateIncidentDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateLocationDto"
+                "$ref": "#/components/schemas/CreateIncidentDto"
               }
             }
           }
@@ -100,8 +89,8 @@
         }
       }
     },
-    "/api/Incidents/bycode/{code}": {
-      "get": {
+    "/api/incidents/complete/{code}": {
+      "post": {
         "tags": [
           "Incidents"
         ],
@@ -121,131 +110,47 @@
           }
         }
       }
-    },
-    "/api/Incidents": {
-      "get": {
-        "tags": [
-          "Incidents"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Incidents"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Incident"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Incident"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Incident"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
     }
   },
   "components": {
     "schemas": {
-      "Ambulance": {
+      "AssignDto": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "driverName": {
+          "incidentCode": {
             "type": "string",
             "nullable": true
-          },
-          "isAvailable": {
-            "type": "boolean"
-          },
-          "latitude": {
-            "type": "number",
-            "format": "double"
-          },
-          "longitude": {
-            "type": "number",
-            "format": "double"
-          },
-          "lastUpdate": {
-            "type": "string",
-            "format": "date-time"
-          }
-        },
-        "additionalProperties": false
-      },
-      "Incident": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "patientPhone": {
-            "type": "string",
-            "nullable": true
-          },
-          "code": {
-            "type": "string",
-            "nullable": true
-          },
-          "latitude": {
-            "type": "number",
-            "format": "double"
-          },
-          "longitude": {
-            "type": "number",
-            "format": "double"
           },
           "ambulanceId": {
             "type": "string",
-            "format": "uuid",
-            "nullable": true
-          },
-          "ambulance": {
-            "$ref": "#/components/schemas/Ambulance"
-          },
-          "isActive": {
-            "type": "boolean"
-          },
-          "status": {
-            "type": "string",
-            "nullable": true
+            "format": "uuid"
           }
         },
         "additionalProperties": false
       },
-      "UpdateLocationDto": {
+      "CreateIncidentDto": {
+        "required": [
+          "latitude",
+          "longitude"
+        ],
         "type": "object",
         "properties": {
           "latitude": {
+            "maximum": 90,
+            "minimum": -90,
             "type": "number",
             "format": "double"
           },
           "longitude": {
+            "maximum": 180,
+            "minimum": -180,
             "type": "number",
             "format": "double"
+          },
+          "patientPhone": {
+            "type": "string",
+            "format": "tel",
+            "nullable": true
           }
         },
         "additionalProperties": false

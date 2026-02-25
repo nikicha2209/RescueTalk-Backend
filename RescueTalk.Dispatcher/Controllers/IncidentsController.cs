@@ -1,64 +1,37 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RescueTalk.Dispatcher.Data;
+using RescueTalk.Dispatcher.DTOs;
 using RescueTalk.Dispatcher.Models;
+using RescueTalk.Dispatcher.Services;
 
 namespace RescueTalk.Dispatcher.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/incidents")]
     public class IncidentsController : ControllerBase
     {
-        private readonly RescueTalkDbContext _context;
+        private readonly IIncidentService _service;
 
-        public IncidentsController(RescueTalkDbContext context)
+        public IncidentsController(IIncidentService service)
         {
-            _context = context;
-        }
-
-        [HttpGet("bycode/{code}")]
-        public async Task<IActionResult> GetByCode(string code)
-        {
-            var incident = await _context.Incidents
-                .Include(i => i.Ambulance)
-                .FirstOrDefaultAsync(i => i.Code == code && i.IsActive);
-
-            if (incident == null)
-                return NotFound();
-
-            return Ok(incident);
+            _service = service;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
-        {
-            var incidents = await _context.Incidents
-                .Include(i => i.Ambulance)
-                .Where(i => i.IsActive)
-                .ToListAsync();
+            => Ok(await _service.GetAllAsync());
 
-            return Ok(incidents);
+        [HttpPost("complete/{code}")]
+        public async Task<IActionResult> Complete(string code)
+        {
+            await _service.CompleteAsync(code); 
+            return Ok();
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateIncident([FromBody] Incident incident)
-        {
-            incident.Id = Guid.NewGuid();
-            incident.IsActive = true;
-            incident.Status = "Pending";
-            incident.Code = GenerateIncidentCode();
-            //incident.CreatedAt = DateTime.UtcNow;
+        public async Task<IActionResult> Create(CreateIncidentDto dto)
+            => Ok(await _service.CreateAsync(dto));
 
-            _context.Incidents.Add(incident);
-            await _context.SaveChangesAsync();
-
-            return Ok(incident);
-        }
-
-        private string GenerateIncidentCode()
-        {
-            var random = new Random();
-            return "RT-" + random.Next(100000, 999999);
-        }
     }
 }

@@ -1,334 +1,381 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="bg">
 <head>
+    <meta charset="UTF-8">
     <title>RescueTalk Dispatcher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet"
-          href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <style>
+        :root {
+            --bg-dark: #0f172a;
+            --panel-bg: #1e293b;
+            --card-bg: #334155;
+            --primary: #0284c7;
+            --success: #16a34a;
+            --text-light: #f8fafc;
+        }
+
         body {
             margin: 0;
-            font-family: Arial;
-            display: flex;
-            height: 100vh;
-            padding-top: 60px;
-            background: #12121c;
-        }
-
-        /* TOP BAR */
-        .topbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 60px;
-            background: #181828;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-            color: white;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
-        }
-
-        .logo {
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .actions button {
-            margin-left: 10px;
-            padding: 8px 14px;
-            border: none;
-            border-radius: 6px;
-            background: #00c3ff;
-            color: white;
-            cursor: pointer;
-        }
-
-            .actions button:hover {
-                background: #00a8dd;
-            }
-
-        /* SIDEBAR */
-        .sidebar {
-            width: 350px;
-            background: #1e1e2f;
-            color: white;
-            padding: 20px;
-            overflow-y: auto;
-        }
-
-        .content {
-            flex: 1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-light);
             display: flex;
             flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            padding: 15px 25px;
+            background: var(--panel-bg);
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+        }
+
+        .main {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
         }
 
         #map {
+            flex: 3;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .sidebar {
             flex: 1;
+            background: var(--panel-bg);
+            padding: 20px;
+            overflow-y: auto;
+            border-left: 1px solid #2d3748;
+            min-width: 320px;
         }
 
-        h2 {
-            border-bottom: 1px solid gray;
-            padding-bottom: 5px;
+        .incident-card {
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
-        .card {
-            background: #2c2c40;
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        button {
+            width: 100%;
             padding: 10px;
-            margin-bottom: 10px;
+            border: none;
             border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            color: white;
+            transition: opacity 0.2s;
         }
 
-        .available {
-            border-left: 5px solid #00ff88;
+            button:active {
+                transform: scale(0.98);
+            }
+
+        .assign {
+            background: var(--success);
         }
 
-        .busy {
-            border-left: 5px solid #ff4d4d;
+        .arrived {
+            background: var(--primary);
         }
 
-        /* MODAL */
-        .modal {
-            display: none;
+        button:hover {
+            opacity: 0.9;
+        }
+
+        .status-pending {
+            color: #fbbf24;
+            font-weight: bold;
+        }
+
+        .status-assigned {
+            color: #4ade80;
+            font-weight: bold;
+        }
+
+        .ambulance-marker {
+            font-size: 24px;
+            text-shadow: 0 0 5px rgba(0,0,0,0.5);
+        }
+
+        .modal-overlay {
             position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.7);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.75);
+            display: flex;
             justify-content: center;
             align-items: center;
-            z-index: 2000;
+            z-index: 10000;
         }
 
         .modal-content {
-            background: #1e1e2f;
+            background: var(--panel-bg);
             padding: 25px;
-            border-radius: 10px;
-            width: 320px;
-            color: white;
-            box-shadow: 0 0 25px rgba(0,0,0,0.8);
+            border-radius: 12px;
+            width: 90%;
+            max-width: 400px;
+            position: relative;
         }
 
-            .modal-content input {
-                width: 100%;
-                padding: 8px;
-                margin-bottom: 10px;
-                border-radius: 6px;
-                border: none;
-            }
-
-            .modal-content button {
-                width: 100%;
-                padding: 10px;
-                border: none;
-                border-radius: 6px;
-                margin-top: 5px;
-                cursor: pointer;
-            }
-
-        .save-btn {
-            background: #00c3ff;
-            color: white;
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #94a3b8;
         }
 
-        .cancel-btn {
-            background: #444;
+        select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            background: #0f172a;
             color: white;
+            margin: 15px 0;
+            border: 1px solid #475569;
+        }
+
+        @media (max-width: 992px) {
+            .main {
+                flex-direction: column;
+            }
+
+            #map {
+                height: 40vh;
+                flex: none;
+            }
+
+            .sidebar {
+                border-left: none;
+                border-top: 1px solid #2d3748;
+            }
         }
     </style>
 </head>
 <body>
 
-    <div class="topbar">
-        <div class="logo">🚑 RescueTalk Dispatcher</div>
-        <div class="actions">
-            <button onclick="openAmbulanceModal()">+ Линейка</button>
-            <button onclick="openIncidentModal()">+ Инцидент</button>
+    <header>RescueTalk Dispatcher</header>
+
+    <div class="main">
+        <div id="map"></div>
+        <div class="sidebar">
+            <h3>Активни инциденти</h3>
+            <div id="incidentList"></div>
+            <hr style="border: 0; border-top: 1px solid #243041; margin: 20px 0;">
+            <h3>Линейки</h3>
+            <div id="ambulanceList"></div>
         </div>
     </div>
 
-    <div class="sidebar">
-        <h2>Линейки</h2>
-        <div id="ambulanceList"></div>
-
-        <h2>Инциденти</h2>
-        <div id="incidentList"></div>
-    </div>
-
-    <div class="content">
-        <div id="map"></div>
-    </div>
-
-    <!-- MODAL -->
-    <div id="modal" class="modal">
-        <div class="modal-content" id="modalContent"></div>
-    </div>
-
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
     <script>
-        const map = L.map('map').setView([43.8430, 25.9534], 13);
+        const API_BASE = "https://localhost:7019";
+        const map = L.map('map').setView([43.8356, 25.9657], 14);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap'
-        }).addTo(map);
+        let incidentMarkers = {};
+        let ambulanceMarkers = {};
+        let ambulanceData = [];
+        let assignmentLines = [];
 
-        const markers = {};
-        const incidentMarkers = {};
-        const assignmentLines = {};
-
-        const incidentIcon = new L.Icon({
-            iconUrl: 'https://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
-            iconSize: [32, 32]
+        const ambulanceIcon = L.divIcon({
+            className: 'ambulance-marker',
+            html: '🚑',
+            iconSize: [30, 30],
+            iconAnchor: [15, 15]
         });
 
-        async function loadAmbulances() {
-            const res = await fetch("https://localhost:7019/api/ambulances");
-            const ambulances = await res.json();
-
-            const list = document.getElementById("ambulanceList");
-            list.innerHTML = "";
-
-            ambulances.forEach(a => {
-
-                const card = document.createElement("div");
-                card.className = "card " + (a.isAvailable ? "available" : "busy");
-                card.innerHTML = `
-                            <b>${a.driverName}</b><br/>
-                            Status: ${a.isAvailable ? "Свободна" : "Заета"}<br/>
-                            Lat: ${a.latitude}<br/>
-                            Lng: ${a.longitude}
-                        `;
-                list.appendChild(card);
-
-                if (a.latitude !== 0 && a.longitude !== 0) {
-
-                    if (!markers[a.id]) {
-                        markers[a.id] = L.marker([a.latitude, a.longitude])
-                            .addTo(map)
-                            .bindPopup(`🚑 ${a.driverName}`);
-                    }
-                }
-            });
-        }
-
-        async function loadIncidents() {
-
-            const res = await fetch("/api/incidents");
-            const incidents = await res.json();
-
-            const list = document.getElementById("incidentList");
-            list.innerHTML = "";
-
-            incidents.forEach(i => {
-
-                const card = document.createElement("div");
-                card.className = "card busy";
-
-                card.innerHTML = `
-            <b>🚨 Код:</b> ${i.code ?? "N/A"}<br/>
-            <b>Статус:</b> ${i.status ?? "N/A"}
-        `;
-
-                list.appendChild(card);
-
-                if (i.latitude && i.longitude && !incidentMarkers[i.id]) {
-                    incidentMarkers[i.id] = L.marker(
-                        [i.latitude, i.longitude],
-                        { icon: incidentIcon }
-                    )
-                        .addTo(map)
-                        .bindPopup(`${i.code ?? ""}`);
-                }
-            });
-        }
-
-        loadAmbulances();
-        loadIncidents();
-
         const connection = new signalR.HubConnectionBuilder()
-            .withUrl("https://localhost:7019/ambulanceHub")
+            .withUrl(`${API_BASE}/ambulanceHub`)
             .withAutomaticReconnect()
             .build();
 
-        connection.on("ReceiveLocation", function (id, lat, lng) {
-
-            lat = parseFloat(lat);
-            lng = parseFloat(lng);
-
-            if (markers[id]) {
-                markers[id].setLatLng([lat, lng]);
-            }
+        connection.on("IncidentUpdated", () => { loadIncidents(); loadAmbulances(); });
+        connection.on("ReceiveLocation", (id, lat, lng) => {
+            if (ambulanceMarkers[id]) ambulanceMarkers[id].setLatLng([lat, lng]);
+            updateAssignmentLines();
         });
 
         connection.start()
-            .then(() => console.log("Connected"));
+            .then(() => { loadAmbulances(); loadIncidents(); })
+            .catch(console.error);
 
-        /* MODAL LOGIC */
+        async function loadIncidents() {
+            const container = document.getElementById("incidentList");
+            const res = await fetch(`${API_BASE}/api/incidents`);
+            const data = await res.json();
+            container.innerHTML = "";
 
-        function openAmbulanceModal() {
-            document.getElementById("modal").style.display = "flex";
-            document.getElementById("modalContent").innerHTML = `
-                        <h3>Нова линейка</h3>
-                        <input id="driverName" placeholder="Име на шофьор" />
-                        <input id="lat" placeholder="Latitude" />
-                        <input id="lng" placeholder="Longitude" />
-                        <button class="save-btn" onclick="submitAmbulance()">Запази</button>
-                        <button class="cancel-btn" onclick="closeModal()">Отказ</button>
-                    `;
+            data.forEach(i => {
+                const isCompleted = i.status.toLowerCase() === "completed";
+                const isAssigned = i.status.toLowerCase() === "assigned";
+                let marker = incidentMarkers[i.code];
+
+                if (isCompleted) {
+                    if (marker) {
+                        map.removeLayer(marker);
+                        delete incidentMarkers[i.code];
+                    }
+                } else {
+                    if (!marker) {
+                        marker = L.marker([i.latitude, i.longitude]).addTo(map).bindPopup(`<b>${i.code}</b>`);
+                        incidentMarkers[i.code] = marker;
+                    }
+                }
+
+                const amb = ambulanceData.find(a => a.id == i.ambulanceId);
+                const driverDisplay = amb ? amb.driverName : "Не е назначен";
+
+                const card = document.createElement("div");
+                card.className = "incident-card";
+
+                if (isCompleted) {
+                    card.style.opacity = "0.6";
+                    card.style.borderLeft = "4px solid #64748b";
+                }
+
+                card.innerHTML = `
+            <div>
+                <b>Код: ${i.code}</b><br>
+                Статус: <span class="status-${i.status.toLowerCase()}">${i.status}</span><br>
+                ${isAssigned ? `<small style="color:#4ade80">Екип: <b>${driverDisplay}</b></small><br>` : ''}
+                ${isCompleted ? `<small style="color:#94a3b8"><i>Мисията приключена</i></small>` : ''}
+            </div>
+            <div class="button-group">
+                ${(!isAssigned && !isCompleted) ? `<button class="assign" onclick="openAssignModal('${i.code}')">Назначи екип</button>` : ''}
+                ${!isCompleted ? `<button class="arrived" onclick="markArrived('${i.code}')">Приключи инцидента</button>` : ''}
+            </div>
+        `;
+                container.appendChild(card);
+            });
         }
 
-        function openIncidentModal() {
-            document.getElementById("modal").style.display = "flex";
-            document.getElementById("modalContent").innerHTML = `
-                        <h3>Нов инцидент</h3>
-                        <input id="incidentLat" placeholder="Latitude" />
-                        <input id="incidentLng" placeholder="Longitude" />
-                        <button class="save-btn" onclick="submitIncident()">Запази</button>
-                        <button class="cancel-btn" onclick="closeModal()">Отказ</button>
-                    `;
+        async function loadAmbulances() {
+            const container = document.getElementById("ambulanceList");
+            const res = await fetch(`${API_BASE}/api/ambulances`);
+            ambulanceData = await res.json();
+            container.innerHTML = "";
+
+            ambulanceData.forEach(a => {
+                let marker = ambulanceMarkers[a.id];
+                const statusText = a.isAvailable ? "Свободна" : "Заета";
+
+                if (!marker) {
+                    marker = L.marker([a.latitude, a.longitude], { icon: ambulanceIcon }).addTo(map)
+                        .bindPopup(`<b>${a.driverName}</b>`);
+                    ambulanceMarkers[a.id] = marker;
+                } else {
+                    marker.setLatLng([a.latitude, a.longitude]);
+                }
+
+                const row = document.createElement("div");
+                row.className = "incident-card";
+                row.style.borderLeft = `4px solid ${a.isAvailable ? '#16a34a' : '#dc2626'}`;
+                row.innerHTML = `<b>${a.driverName}</b><br>${statusText}`;
+                container.appendChild(row);
+            });
         }
 
-        function closeModal() {
-            document.getElementById("modal").style.display = "none";
-        }
+        function openAssignModal(incidentCode) {
+            const overlay = document.createElement("div");
+            overlay.className = "modal-overlay";
 
-        async function submitAmbulance() {
-            const res = await fetch("/api/ambulances", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    driverName: document.getElementById("driverName").value,
-                    latitude: parseFloat(document.getElementById("lat").value),
-                    longitude: parseFloat(document.getElementById("lng").value)
-                })
+            let options = '<option disabled selected>Изберете свободен екип...</option>';
+            ambulanceData.filter(a => a.isAvailable).forEach(a => {
+                options += `<option value="${a.id}">🚑 ${a.driverName} (Лок: ${a.latitude.toFixed(2)}, ${a.longitude.toFixed(2)})</option>`;
             });
 
-            console.log(await res.text());
+            overlay.innerHTML = `
+                    <div class="modal-content">
+                        <span class="modal-close" onclick="this.parentElement.parentElement.remove()">&times;</span>
+                        <h4>Назначаване за ${incidentCode}</h4>
+                        <select id="ambSelect">${options}</select>
+                        <button class="assign" id="confirmBtn">Потвърди</button>
+                    </div>
+                `;
+            document.body.appendChild(overlay);
 
-            closeModal();
-            loadAmbulances();
+            overlay.querySelector("#confirmBtn").onclick = async () => {
+                const ambulanceId = document.getElementById("ambSelect").value;
+                if (!ambulanceId) return;
+
+                const response = await fetch(`${API_BASE}/api/ambulances/assign`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ incidentCode, ambulanceId })
+                });
+
+                if (response.ok) {
+                    overlay.remove();
+                    await loadAmbulances();
+                    await loadIncidents();
+                    drawAssignmentLine(incidentCode, ambulanceId);
+                }
+            };
         }
 
-        async function submitIncident() {
-            await fetch("https://localhost:7019/api/incidents", {
+        function drawAssignmentLine(incidentCode, ambulanceId) {
+            const im = incidentMarkers[incidentCode], am = ambulanceMarkers[ambulanceId];
+            if (!im || !am) return;
+
+            const existing = assignmentLines.find(l => l.incidentCode === incidentCode);
+            if (existing) map.removeLayer(existing.polyline);
+
+            const polyline = L.polyline([im.getLatLng(), am.getLatLng()], {
+                color: '#4ade80', weight: 3, dashArray: '7, 7'
+            }).addTo(map);
+
+            assignmentLines.push({ incidentCode, ambulanceId, polyline });
+        }
+
+        function updateAssignmentLines() {
+            assignmentLines.forEach(l => {
+                const im = incidentMarkers[l.incidentCode], am = ambulanceMarkers[l.ambulanceId];
+                if (im && am) l.polyline.setLatLngs([im.getLatLng(), am.getLatLng()]);
+            });
+        }
+
+        async function markArrived(incidentCode) {
+            if (!confirm("Затваряне на случая и освобождаване на екипа?")) return;
+            const res = await fetch(`${API_BASE}/api/incidents/complete/${incidentCode}`, { method: "POST" });
+            if (res.ok) {
+                const idx = assignmentLines.findIndex(l => l.incidentCode === incidentCode);
+                if (idx >= 0) { map.removeLayer(assignmentLines[idx].polyline); assignmentLines.splice(idx, 1); }
+                await loadAmbulances();
+                await loadIncidents();
+            }
+        }
+
+        map.on("click", async e => {
+            if (!confirm("Създаване на нов инцидент тук?")) return;
+            await fetch(`${API_BASE}/api/incidents`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    latitude: parseFloat(document.getElementById("incidentLat").value),
-                    longitude: parseFloat(document.getElementById("incidentLng").value)
-                })
+                body: JSON.stringify({ latitude: e.latlng.lat, longitude: e.latlng.lng })
             });
-
-            closeModal();
             loadIncidents();
-        }
-
+        });
     </script>
-
 </body>
 </html>

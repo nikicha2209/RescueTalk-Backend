@@ -6,18 +6,148 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace RescueTalk.Dispatcher.Migrations
 {
     /// <inheritdoc />
-    public partial class InitSqlite : Migration
+    public partial class UpdatedModels : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropColumn(
+                name: "LastUpdate",
+                table: "Ambulances");
+
+            migrationBuilder.AlterColumn<string>(
+                name: "Status",
+                table: "Incidents",
+                type: "nvarchar(50)",
+                maxLength: 50,
+                nullable: false,
+                oldClrType: typeof(string),
+                oldType: "TEXT");
+
+            migrationBuilder.AlterColumn<string>(
+                name: "PatientPhone",
+                table: "Incidents",
+                type: "nvarchar(max)",
+                nullable: true,
+                oldClrType: typeof(string),
+                oldType: "TEXT",
+                oldNullable: true);
+
+            migrationBuilder.AlterColumn<double>(
+                name: "Longitude",
+                table: "Incidents",
+                type: "float",
+                nullable: false,
+                oldClrType: typeof(float),
+                oldType: "REAL");
+
+            migrationBuilder.AlterColumn<double>(
+                name: "Latitude",
+                table: "Incidents",
+                type: "float",
+                nullable: false,
+                oldClrType: typeof(float),
+                oldType: "REAL");
+
+            migrationBuilder.AlterColumn<bool>(
+                name: "IsActive",
+                table: "Incidents",
+                type: "bit",
+                nullable: false,
+                oldClrType: typeof(bool),
+                oldType: "INTEGER");
+
+            migrationBuilder.AlterColumn<string>(
+                name: "Code",
+                table: "Incidents",
+                type: "nvarchar(20)",
+                maxLength: 20,
+                nullable: false,
+                defaultValue: "",
+                oldClrType: typeof(string),
+                oldType: "TEXT",
+                oldNullable: true);
+
+            migrationBuilder.AlterColumn<Guid>(
+                name: "AmbulanceId",
+                table: "Incidents",
+                type: "uniqueidentifier",
+                nullable: true,
+                oldClrType: typeof(string),
+                oldType: "TEXT",
+                oldNullable: true);
+
+            migrationBuilder.AlterColumn<Guid>(
+                name: "Id",
+                table: "Incidents",
+                type: "uniqueidentifier",
+                nullable: false,
+                oldClrType: typeof(string),
+                oldType: "TEXT");
+
+            migrationBuilder.AlterColumn<double>(
+                name: "Longitude",
+                table: "Ambulances",
+                type: "float",
+                nullable: false,
+                oldClrType: typeof(float),
+                oldType: "REAL");
+
+            migrationBuilder.AlterColumn<double>(
+                name: "Latitude",
+                table: "Ambulances",
+                type: "float",
+                nullable: false,
+                oldClrType: typeof(float),
+                oldType: "REAL");
+
+            migrationBuilder.AlterColumn<bool>(
+                name: "IsAvailable",
+                table: "Ambulances",
+                type: "bit",
+                nullable: false,
+                oldClrType: typeof(bool),
+                oldType: "INTEGER");
+
+            migrationBuilder.AlterColumn<string>(
+                name: "DriverName",
+                table: "Ambulances",
+                type: "nvarchar(100)",
+                maxLength: 100,
+                nullable: false,
+                oldClrType: typeof(string),
+                oldType: "TEXT");
+
+            migrationBuilder.AlterColumn<Guid>(
+                name: "Id",
+                table: "Ambulances",
+                type: "uniqueidentifier",
+                nullable: false,
+                oldClrType: typeof(string),
+                oldType: "TEXT");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Incidents_Code",
+                table: "Incidents",
+                column: "Code",
+                unique: true);
+        }
+
+        /// <inheritdoc />
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropIndex(
+                name: "IX_Incidents_Code",
+                table: "Incidents");
+
             migrationBuilder.AlterColumn<string>(
                 name: "Status",
                 table: "Incidents",
                 type: "TEXT",
                 nullable: false,
                 oldClrType: typeof(string),
-                oldType: "nvarchar(max)");
+                oldType: "nvarchar(50)",
+                oldMaxLength: 50);
 
             migrationBuilder.AlterColumn<string>(
                 name: "PatientPhone",
@@ -28,7 +158,7 @@ namespace RescueTalk.Dispatcher.Migrations
                 oldType: "nvarchar(max)",
                 oldNullable: true);
 
-            migrationBuilder.AlterColumn<double>(
+            migrationBuilder.AlterColumn<float>(
                 name: "Longitude",
                 table: "Incidents",
                 type: "REAL",
@@ -36,7 +166,7 @@ namespace RescueTalk.Dispatcher.Migrations
                 oldClrType: typeof(double),
                 oldType: "float");
 
-            migrationBuilder.AlterColumn<double>(
+            migrationBuilder.AlterColumn<float>(
                 name: "Latitude",
                 table: "Incidents",
                 type: "REAL",
@@ -58,10 +188,10 @@ namespace RescueTalk.Dispatcher.Migrations
                 type: "TEXT",
                 nullable: true,
                 oldClrType: typeof(string),
-                oldType: "nvarchar(max)",
-                oldNullable: true);
+                oldType: "nvarchar(20)",
+                oldMaxLength: 20);
 
-            migrationBuilder.AlterColumn<Guid>(
+            migrationBuilder.AlterColumn<string>(
                 name: "AmbulanceId",
                 table: "Incidents",
                 type: "TEXT",
@@ -70,7 +200,7 @@ namespace RescueTalk.Dispatcher.Migrations
                 oldType: "uniqueidentifier",
                 oldNullable: true);
 
-            migrationBuilder.AlterColumn<Guid>(
+            migrationBuilder.AlterColumn<string>(
                 name: "Id",
                 table: "Incidents",
                 type: "TEXT",
@@ -78,7 +208,7 @@ namespace RescueTalk.Dispatcher.Migrations
                 oldClrType: typeof(Guid),
                 oldType: "uniqueidentifier");
 
-            migrationBuilder.AlterColumn<double>(
+            migrationBuilder.AlterColumn<float>(
                 name: "Longitude",
                 table: "Ambulances",
                 type: "REAL",
@@ -86,21 +216,13 @@ namespace RescueTalk.Dispatcher.Migrations
                 oldClrType: typeof(double),
                 oldType: "float");
 
-            migrationBuilder.AlterColumn<double>(
+            migrationBuilder.AlterColumn<float>(
                 name: "Latitude",
                 table: "Ambulances",
                 type: "REAL",
                 nullable: false,
                 oldClrType: typeof(double),
                 oldType: "float");
-
-            migrationBuilder.AlterColumn<DateTime>(
-                name: "LastUpdate",
-                table: "Ambulances",
-                type: "TEXT",
-                nullable: false,
-                oldClrType: typeof(DateTime),
-                oldType: "datetime2");
 
             migrationBuilder.AlterColumn<bool>(
                 name: "IsAvailable",
@@ -116,134 +238,23 @@ namespace RescueTalk.Dispatcher.Migrations
                 type: "TEXT",
                 nullable: false,
                 oldClrType: typeof(string),
-                oldType: "nvarchar(max)");
+                oldType: "nvarchar(100)",
+                oldMaxLength: 100);
 
-            migrationBuilder.AlterColumn<Guid>(
+            migrationBuilder.AlterColumn<string>(
                 name: "Id",
                 table: "Ambulances",
                 type: "TEXT",
                 nullable: false,
                 oldClrType: typeof(Guid),
                 oldType: "uniqueidentifier");
-        }
 
-        /// <inheritdoc />
-        protected override void Down(MigrationBuilder migrationBuilder)
-        {
-            migrationBuilder.AlterColumn<string>(
-                name: "Status",
-                table: "Incidents",
-                type: "nvarchar(max)",
-                nullable: false,
-                oldClrType: typeof(string),
-                oldType: "TEXT");
-
-            migrationBuilder.AlterColumn<string>(
-                name: "PatientPhone",
-                table: "Incidents",
-                type: "nvarchar(max)",
-                nullable: true,
-                oldClrType: typeof(string),
-                oldType: "TEXT",
-                oldNullable: true);
-
-            migrationBuilder.AlterColumn<double>(
-                name: "Longitude",
-                table: "Incidents",
-                type: "float",
-                nullable: false,
-                oldClrType: typeof(double),
-                oldType: "REAL");
-
-            migrationBuilder.AlterColumn<double>(
-                name: "Latitude",
-                table: "Incidents",
-                type: "float",
-                nullable: false,
-                oldClrType: typeof(double),
-                oldType: "REAL");
-
-            migrationBuilder.AlterColumn<bool>(
-                name: "IsActive",
-                table: "Incidents",
-                type: "bit",
-                nullable: false,
-                oldClrType: typeof(bool),
-                oldType: "INTEGER");
-
-            migrationBuilder.AlterColumn<string>(
-                name: "Code",
-                table: "Incidents",
-                type: "nvarchar(max)",
-                nullable: true,
-                oldClrType: typeof(string),
-                oldType: "TEXT",
-                oldNullable: true);
-
-            migrationBuilder.AlterColumn<Guid>(
-                name: "AmbulanceId",
-                table: "Incidents",
-                type: "uniqueidentifier",
-                nullable: true,
-                oldClrType: typeof(Guid),
-                oldType: "TEXT",
-                oldNullable: true);
-
-            migrationBuilder.AlterColumn<Guid>(
-                name: "Id",
-                table: "Incidents",
-                type: "uniqueidentifier",
-                nullable: false,
-                oldClrType: typeof(Guid),
-                oldType: "TEXT");
-
-            migrationBuilder.AlterColumn<double>(
-                name: "Longitude",
-                table: "Ambulances",
-                type: "float",
-                nullable: false,
-                oldClrType: typeof(double),
-                oldType: "REAL");
-
-            migrationBuilder.AlterColumn<double>(
-                name: "Latitude",
-                table: "Ambulances",
-                type: "float",
-                nullable: false,
-                oldClrType: typeof(double),
-                oldType: "REAL");
-
-            migrationBuilder.AlterColumn<DateTime>(
+            migrationBuilder.AddColumn<string>(
                 name: "LastUpdate",
                 table: "Ambulances",
-                type: "datetime2",
+                type: "TEXT",
                 nullable: false,
-                oldClrType: typeof(DateTime),
-                oldType: "TEXT");
-
-            migrationBuilder.AlterColumn<bool>(
-                name: "IsAvailable",
-                table: "Ambulances",
-                type: "bit",
-                nullable: false,
-                oldClrType: typeof(bool),
-                oldType: "INTEGER");
-
-            migrationBuilder.AlterColumn<string>(
-                name: "DriverName",
-                table: "Ambulances",
-                type: "nvarchar(max)",
-                nullable: false,
-                oldClrType: typeof(string),
-                oldType: "TEXT");
-
-            migrationBuilder.AlterColumn<Guid>(
-                name: "Id",
-                table: "Ambulances",
-                type: "uniqueidentifier",
-                nullable: false,
-                oldClrType: typeof(Guid),
-                oldType: "TEXT");
+                defaultValue: "");
         }
     }
 }

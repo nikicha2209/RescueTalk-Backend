@@ -1,2 +1,1 @@
 wwwroot\dispatcher.html
-wwwroot\test.html
